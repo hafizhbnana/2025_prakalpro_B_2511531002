@@ -1,39 +1,21 @@
 package pekan2;
 
-import java.util.Scanner;
-
 public class tugasAlproPekan2 {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
+	public static void main(String args[]) {
+		int age = 18;
+		float height = 165.5f;
+		char bloodType = 'O';
+		boolean isMarried = false;
 		
-		//Input data
-		System.out.print("Masukkan NIM Anda: ");
-		String nim = input.nextLine();
+		System.out.println("\n=== Data Diri ===\n");
 		
-		System.out.print("Masukkan Nama Lengkap Anda: ");
-		String nama = input.nextLine();
-		
-		System.out.print("Masukkan Umur Anda: ");
-		int umur = input.nextInt();
-		
-		//Konversi umur menjadi String
-		String umurString = String.valueOf(umur);
-		
-		//Konversi NIM menjadi Long, lalu tambahkan dengan Umur
-		long nimLong = Long.parseLong(nim);
-		long hasilPenjumlahan = nimLong + umur;
-		
-		//Output
-		System.out.println("\n=== Data Mahasiswa ===\n");
-		System.out.println("NIM: " + nim);
-		System.out.println("Nama: " + nama);
-		System.out.println("Umur: " + umur + " Tahun");
-		
-		System.out.println("\nUmur (String): " + umurString);
-		System.out.println("NIM + Umur: " + hasilPenjumlahan);
-		
-		input.close();
-		
+		System.out.println("Umur: " + age + " Tahun");
+		System.out.println("Tinggi badan: " + height + " cm");
+		System.out.println("Golongan darah: " + bloodType);
+		System.out.println("Status Pernikahan: " + isMarried);	
 	}
-
 }
+
+
+
+
